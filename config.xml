@@ -1,0 +1,18 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerConfig>
+
+    <!-- Host Name of the web server -->
+    <Host>lattadata</Host>
+    <Port>1025</Port>
+
+    <!-- Directory where static web files are served from -->
+    <WebDirectory>/home/isaac/Projects/Website</WebDirectory>
+    <!-- <WebDirectory>/home/isaac/</WebDirectory> -->
+
+    <!-- Route definitions -->
+    <Routes>
+        <!-- Define a POST route for the /login endpoint -->
+        <Route method="POST" endpoint="index.html" script="scripts/contact.py" />
+    </Routes>
+</ServerConfig>
