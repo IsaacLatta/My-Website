@@ -7,8 +7,7 @@
     <Port>1025</Port>
 
     <!-- Directory where static web files are served from -->
-    <WebDirectory>/home/isaac/Projects/Website</WebDirectory>
-    <!-- <WebDirectory>/home/isaac/</WebDirectory> -->
+    <WebDirectory>/var/www/lattadata</WebDirectory>
 
     <!-- Route definitions -->
     <Routes>
