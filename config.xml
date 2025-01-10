@@ -11,7 +11,6 @@
 
     <!-- Route definitions -->
     <Routes>
-        <!-- Define a POST route for the /login endpoint -->
         <Route method="POST" endpoint="index.html" script="scripts/contact.py" />
     </Routes>
 </ServerConfig>
