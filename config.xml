@@ -4,7 +4,7 @@
 
     <!-- Host Name of the web server -->
     <Host>lattadata</Host>
-    <Port>1025</Port>
+    <Port>8080</Port>
 
     <!-- Directory where static web files are served from -->
     <WebDirectory>/var/www/lattadata</WebDirectory>
