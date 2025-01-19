@@ -11,6 +11,6 @@
 
     <!-- Route definitions -->
     <Routes>
-        <Route method="POST" endpoint="submit" script="scripts/contact.py" />
+        <Route method="POST" endpoint="index.html" script="scripts/contact.py" />
     </Routes>
 </ServerConfig>

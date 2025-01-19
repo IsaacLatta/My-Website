@@ -39,15 +39,14 @@ $(window).on("load", function() {
     });
 });
 
-fetch('/submit', { method: 'POST' })
-  .then((response) => {
-    if (response.ok) {
-      // Successfully handled
-      window.location.href = '/index.html'; // Redirect to the main page
-    } else {
-      console.error('Error handling the request:', response.status);
-    }
-  })
-  .catch((error) => {
-    console.error('Fetch error:', error);
-  });
+// fetch('/index.html', { method: 'POST' })
+//   .then((response) => {
+//     if (response.status == 204) {
+//       window.location.href = '/index.html'; // Redirect to the main page
+//     } else {
+//       console.error('Error handling the request:', response.status);
+//     }
+//   })
+//   .catch((error) => {
+//     console.error('Fetch error:', error);
+//   });
