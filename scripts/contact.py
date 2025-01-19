@@ -56,7 +56,7 @@ def main():
         )
 
         if send_to_telegram(telegram_message):
-            sys.stdout.write("HTTP/1.1 204 No Content\r\n\r\n")
+            sys.stdout.write("HTTP/1.1 303 See Other\r\nLocation: /\r\n\r\n")
         else:
             sys.stdout.write("HTTP/1.1 500 Internal Server Error\r\n\r\n")
     except json.JSONDecodeError as e:
