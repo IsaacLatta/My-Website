@@ -1,0 +1,8 @@
+[2025-02-07 11:51] STATUS [Server] initialiizing ...
+[2025-02-07 11:51] STATUS [Server] configuration loaded from file: config.xml
+[2025-02-07 11:51] STATUS [Server] serving from: /home/isaac/Projects/My-Website
+[2025-02-07 11:51] STATUS [Server] lattadata is running on [fedora 10.50.36.240:1025] pid=14150
+[2025-02-07 11:54] STATUS [Server] initialiizing ...
+[2025-02-07 11:54] STATUS [Server] configuration loaded from file: config.xml
+[2025-02-07 11:54] STATUS [Server] serving from: /home/isaac/Projects/My-Website
+[2025-02-07 11:54] STATUS [Server] lattadata is running on [fedora 10.50.36.240:1025] pid=14460

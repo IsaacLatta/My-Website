@@ -11509,11 +11509,15 @@ pre .code {
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/isaac_header.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/isaac_header.jpg);
   background-size: cover;
+  /* max-width: '100%'; */
   /* background-position: top center; */
   background-position: top right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+  /* margin-left: 0;
+  min-height: '100%';
+  background-color: '#0000' */
 }
 
 .header .container {
@@ -11550,6 +11554,14 @@ pre .code {
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .header {
+    background-attachment: scroll;
+    /* Optionally adjust the position if needed */
+    background-position: center top;
+  }
 }
 
 @media (max-width: 767.98px) {
