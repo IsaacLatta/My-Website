@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 =========================================================
-* JohnDoe Landing page
+* Landing page
 =========================================================
 
 * Copyright: 2019 DevCRUD (https://devcrud.com)
@@ -11558,6 +11558,9 @@ pre .code {
 
 @media only screen and (max-device-width: 1024px) {
   .header {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/isaac_header.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/isaac_header.jpg);
+    background-size: cover;
     background-attachment: scroll;
     /* Optionally adjust the position if needed */
     background-position: center top;
