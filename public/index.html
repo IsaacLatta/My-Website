@@ -91,9 +91,7 @@
                         <div class="col-12">
                             <h6>CGI-HTTPS/HTTP Web Server</h6>
                             <p class="mt-20">
-                                A high-performance, configurable web server supporting both HTTP and HTTPS protocols. 
-                                Built using Asio for asynchronous networking, it ensures secure communication through SSL/TLS encryption. Features include session management, 
-                                customizable routing, and script integration.
+                                This custom-built CGI web server demonstrates a deep understanding of HTTP, security, and configuration-based design. It handles GET, HEAD, and POST methods; executes dynamic scripts via POSIX calls; and provides optional SSL (HTTPS) support. Role-based access control is managed through JWT tokens, with hierarchical permissions defined in an XML configuration. Featureing modular middleware pipeline for logging, routing, authentication, and error handling.
                             </p>
                             <hr>
                         </div>
@@ -104,7 +102,7 @@
                         <div class="col-12">
                             <h6>HTTP/HTTPS Reverse Proxy Server</h6>
                             <p class="subtitle">
-                                A secure reverse proxy server capable of handling HTTPS traffic. The server decrypts requests, forwards them to an HTTP backend.
+                                A fully developed reverse proxy server using standalone Asio, this project forwards TCP and HTTP requests to defined back-end servers, optionally over SSL. The application logs traffic and can run in the background (daemonized) or handle requests interactively. It also features a command-line interface for port and address configuration, plus optional HTTPS handling for encrypted connections.
                             </p>
                             <hr>
                         </div>
@@ -113,9 +111,18 @@
                     <!-- Third Project Row -->
                     <div class="row mb-3">
                         <div class="col-12">
-                            <h6>Encrypted P2P File Sharing Chatroom</h6>
+                            <h6>URepair</h6>
                             <p class="subtitle">
-                                A peer-to-peer chatroom with integrated file-sharing capabilities, secured with end-to-end encryption.
+                                URepair is a comprehensive desktop application built in C++ using OpenGL, ImGui, and SQLite to manage freelance repair jobs for multiple user roles (clients, contractors, and administrators). It features a clear interface with user profiles, job bookings, and an admin console for direct database queries. By packaging everything under one project, including the build instructions and dependencies, it underscores strong cross-platform development and technical documentation skills
+                            </p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <h6>Mulitplayer Snake Game</h6>
+                            <p class="subtitle">
+                                A classic Snake game expanded to include multiplayer functionality, power-ups, enemies, and detailed scoring mechanisms, all running over Winsock. Players can connect via networked clients and face challenges like sleeping dragons and gravity-based foes and use powerups such as clone snakes, double points, and star-based invincibility. The game uses multiple threads and asynchronous sockets to manage real-time player movement, collisions, and server-side state. 
                             </p>
                             <hr>
                         </div>
@@ -280,20 +287,20 @@
             <div class="row">
                 <div class="blog-card">
                     <div class="img-holder">
-                        <img src="assets/imgs/server_code.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <img src="assets/imgs/server_code.png" alt="Really cool code here">
                     </div>
                     <div class="content-holder">
                         <h6 class="title">Technical Description</h6>
-                        <p><b>The web content you are seeing right now is currently being served from my own web server.</b></p>
+                        <p><b>The web content you are seeing right now is currently being served from my custom web server.</b></p>
 
-                        <p>This website is running on my personal server, I have constructed an xml file in which my server reads its configuration from, and python scripts to handle the some of the actionable components of this website (such as contacting me). 
-                            This website is hosted in either the cloud or on some of my old hardware, depending on when you read this.</p>
-                        <p>The website is running through a series of proxy servers. 
-                            First through a WAF(Web Application Firewall). Then it is proxied on the machine to a series of web server processes. Depending on the time of reading this, it is proxied by either nginx, or my own load balancer. I have also configured a firewall and EDR software to harden the server. 
-                            Additionally I have implented server side scripts for managing the proxies and docker images these server processes run in.
+                        <p>This entire website is powered by my custom-built CGI server written in C++ using ASIO for networking, OpenSSL for HTTPS, and jwt-cpp for authentication. The server reads its configuration from an XML file, while Python scripts handle dynamic or actionable features (such as contact forms and other back-end logic). At the moment, it’s running on physical hardware in my home environment, although I may move it to a cloud-based solution in the future.</p>
+                        <p>All incoming traffic first passes through a Web Application Firewall (WAF) and is then routed via a series of proxies (either nginx or my own load balancer, depending on the setup at the time). I’ve also bolstered security with a firewall, EDR software, and in-house scripts that manage both the proxy processes and Docker images hosting these services.
                         </p>
 
-                        <p>This web server is written in C++ using ASIO for networking, OpenSSL for HTTPS, and jwt-cpp for authentication. To see the full source code, including the web server; its configuration and CGI-scripts, as well as the front end code, I encourage you to click the link below, which will take you to my github. Note that I have left out some details for security reasons.</p>
+                        <p>
+                            If you’d like to see how everything works behind the scenes—including the server code, scripts and front-end code—please feel free to check out my GitHub. 
+                            I’ve omitted some sensitive details for security reasons, but the source code and documentation provide a comprehensive look at the system’s design and capabilities.
+                        </p>
                         </a>
                         <a href="https://github.com/IsaacLatta/Web-Server" target="_blank">View Source Code <i class="ti-angle-double-right"></i></a>
                     </div>
